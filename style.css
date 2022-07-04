@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(215, 215, 215);
+    margin: 0;
+    padding: 0;
+}
+
+#hero-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    width: 300px;
+    padding: 15px 0;
+    margin: 4rem 2rem 2rem;
+    background-color: white;
+}
+
+.hero {
+    padding: 0 15px;
+    position: relative;
+}
+
+.thumb-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.thumb-img img {
+    width: 100%;
+    display: block;
+}
+
+.hero-about {
+    padding: 20px 0 0;
+    text-align: center;
+}
+
+.hero-title {
+    line-height: 1.1;
+    font-size: 16px;
+    margin: 5px 0 10px 5px;
+    font-weight: 600;
+    font-family: Tahoma;
+    list-style-type: none;
+}
+
+.headbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("./dbimage/hero-background.jpg");
+    background-size: cover;
+    background-position: 100% 20%;
+    box-shadow: 0 0 15px #333;
+    position: relative;
+    height: 200px;
+}
+
+.title {
+    color: #fff;
+    font-style: italic;
+    font-family: Tahoma;
+    text-transform: lowercase;
+    pointer-events: none;
+}
+
+.module {
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 78px;
+    margin: 0;
+}
+
+.logo {
+    transform: rotate(-10deg);
+    margin-bottom: 30px;
+}
+
+select {
+    appearance: none;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    flex: 1;
+    padding: 0 1em;
+    font-size: large;
+    font-family: Tahoma;
+    color: #fff;
+    background-color: #707070;
+    cursor: pointer;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.select {
+    position: relative;
+    display: flex;
+    width: 23em;
+    height: 3em;
+    border-radius: .25em;
+    overflow: hidden;
+    left: 37vw;
+    margin: 4rem 0 2rem;
+}
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #989898;
+    transition: .25s all ease;
+    pointer-events: none;
+}
+
+.select:hover::after {
+    color: rgb(215, 215, 215);
+}
